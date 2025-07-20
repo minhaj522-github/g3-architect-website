@@ -1,36 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .work-sans {
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* shared style */
-.brand-name{
+.brand-name {
     font-weight: a00;
     font-size: 30px;
 }
-.bg-light{
+
+.bg-light {
     background-color: rgba(255, 144, 14, 0.1);
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     max-width: 1300px;
     margin: 0 auto;
     align-items: center;
 }
-.nav-links{
+
+.nav-links {
     display: flex;
-    
+
 }
-.nav-items{
+
+.nav-items {
     list-style: none;
     margin-right: 30px;
 }
-a{
+
+a {
     text-decoration: none;
     font-weight: 500;
     color: gray;
@@ -38,17 +43,20 @@ a{
 
 /* banner section styles */
 
-.banner{
+.banner {
     text-align: center;
 }
-.banner-header{
+
+.banner-header {
     font-size: 40px;
     font-weight: 700;
 }
-.banner-p{
+
+.banner-p {
     color: gray;
 }
-.banner-button{
+
+.banner-button {
     padding: 15px;
     width: 150px;
     background-color: #FF900E;
@@ -59,19 +67,86 @@ a{
     color: white;
     margin-bottom: 30px;
 }
-.banner-img{
-    width: 1300px;
-    
+
+.banner-img {
+    max-width: 1300px;
+    margin-bottom: 30px;
+
+}
+
+/* teamwork section style  */
+
+.team-work {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1300px;
+    margin-top: 40px;
+
+}
+
+.team-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+
+.team-features {
+    margin-left: 100px;
+}
+
+.team-header {
+    font-size: 35px;
+    font-weight: 500;
+    color: gray;
+}
+
+.of-our {
+    font-weight: 700;
+    color: black;
+}
+
+.feature {
+    font-weight: 700;
+    color: #FF900E;
 }
 
 
 
 /* responsive media query */
 @media screen and (max-width:576px) {
-    .navbar, .nav-links{
+    main{
+        margin-top: 20px;
+    }
+    .navbar,
+    .nav-links {
         flex-direction: column;
     }
-    .banner-img{
+
+    .banner-img {
         width: 100%;
     }
+
+    .team-work {
+        display: inline;
+        ;
+
+
+    }
+
+    .team-img {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 200px;
+        align-items: center;
+
+    }
+    .team-img > img{
+        width: 224px;
+    }
+    .team-features {
+    margin-left: auto;
+}
 }
